@@ -6,10 +6,10 @@
  on:
    # Triggers the workflow on push or pull request events but only for the "main" branch
    workflow_dispatch:
-     # Inouts the workflow accepts.
+     # Inputs the workflow accepts.
      inputs:
        #Friendly description to be shown in the UI instead of 'name'
-       default: 'World'
+       default: 'World DP'
        #Input has to be provided for the workflow to rub
        required: true
        
@@ -27,4 +27,4 @@
  
        # Runs a single command using the runners shell
        - name: Send greeting
-         run: echo "Hello, $${{github.event.input.name}}"
+         run: echo "Hello, $${{github.event.inputs.name}}"
