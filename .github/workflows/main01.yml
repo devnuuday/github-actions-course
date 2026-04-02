@@ -5,12 +5,18 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
+  build-and-release:
+   runs-on: ubuntu-latest
+   
   echo-job:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v4
+      
       - name: First echo
         run: echo "Hello from my first GitHub Action!"
 
