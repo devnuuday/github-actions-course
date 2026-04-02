@@ -9,11 +9,11 @@ on:
 
 jobs:
   call-workflow-A:
-    uses: devnuuday/github-action-course/.github/workflows/080-reusable-workflow-called.yml@main
+    uses: devnuuday/github-action-course/.github/workflows/08-reusable-workflow-called.yml@main
     with:
      username: Testuser01
 
   call-workflow-B:
-    uses: devnuuday/github-action-course/.github/workflows/080-reusable-workflow-called.yml@main
+    uses: devnuuday/github-action-course/.github/workflows/08-reusable-workflow-called.yml@main
     with:
      username: Testuser02
