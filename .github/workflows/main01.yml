@@ -10,11 +10,8 @@ on:
 jobs:
   build-and-release:
    runs-on: ubuntu-latest
-   
-  echo-job:
-    runs-on: ubuntu-latest
 
-    steps:
+   steps:
       - uses: actions/checkout@v4
       
       - name: First echo
