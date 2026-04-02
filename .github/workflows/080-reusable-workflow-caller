@@ -1,0 +1,19 @@
+name: 080-reusable-workflow-caller
+
+on:
+  push:
+    branches: none
+  pull_request:
+    branches: none
+  workflow_dispatch:
+
+jobs:
+  call-workflow-A:
+    uses: devnuuday/github-action-course/.github/workflows/080-reusable-workflow-called.yml@main
+    with:
+     username: Testuser01
+
+  call-workflow-B:
+    uses: devnuuday/github-action-course/.github/workflows/080-reusable-workflow-called.yml@main
+    with:
+     username: Testuser02
