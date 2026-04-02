@@ -1,0 +1,21 @@
+# This is a basic first workflow to help get started with Actions
+name: My First GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  echo-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: First echo
+        run: echo "Hello from my first GitHub Action!"
+
+      - name: Second multi line echo
+        run: |
+           echo "This is the first line running on the runner."
+           echo "This is the second line running on the runner."
+           
